@@ -7,7 +7,13 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MKGeometry.h>
 
 @interface CLLocation (NNTaxis)
+
+extern const CLLocationCoordinate2D CLNorthWestCoordinateFromRegion(MKCoordinateRegion region);
+extern const CLLocationCoordinate2D CLSouthWestCoordinateFromRegion(MKCoordinateRegion region);
+extern const CLLocationCoordinate2D CLSouthEastCoordinateFromRegion(MKCoordinateRegion region);
+extern const CLLocationCoordinate2D CLNorthEastCoordinateFromRegion(MKCoordinateRegion region);
 
 @end

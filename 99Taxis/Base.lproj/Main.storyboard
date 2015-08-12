@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Taxis View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="NNTTaxisViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m0C-U4-qaB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="KnX-jp-gem"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDL-5a-ph3">
+                                <rect key="frame" x="16" y="517" width="86" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="jqs-Za-NJS"/>
+                                </constraints>
+                                <state key="normal" title="Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showUserLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fIf-Dl-qJx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m0C-U4-qaB" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="05J-gh-QuX"/>
+                            <constraint firstItem="QDL-5a-ph3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7aD-mF-RCj"/>
+                            <constraint firstItem="m0C-U4-qaB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="cy4-Ee-de6"/>
+                            <constraint firstItem="QDL-5a-ph3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="497" id="g67-tq-vNn"/>
+                            <constraint firstAttribute="bottom" secondItem="QDL-5a-ph3" secondAttribute="bottom" constant="20" symbolic="YES" id="jZF-RE-0N1"/>
+                            <constraint firstItem="m0C-U4-qaB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qgw-7q-sDg"/>
+                            <constraint firstAttribute="trailing" secondItem="m0C-U4-qaB" secondAttribute="trailing" id="y8u-d8-fJh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="m0C-U4-qaB" id="17J-Fz-xr0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="366" y="397"/>
         </scene>
     </scenes>
 </document>

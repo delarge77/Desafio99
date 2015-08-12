@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MTLModel.h>
+#import <MTLJSONAdapter.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface NNTaxiDriver : NSObject
+@interface NNTaxiDriver : MTLModel <MTLJSONSerializing, MKAnnotation>
+
+@property (nonatomic, readonly, getter=isAVailable) BOOL driverAvailable;
+@property (nonatomic, copy, readonly) NSNumber *driverId;
+@property (nonatomic, readonly) float latitude;
+@property (nonatomic, readonly) float longitude;
+
+- (NSString *)title;
 
 @end

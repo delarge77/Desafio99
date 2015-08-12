@@ -7,7 +7,26 @@
 //
 
 #import "NNTaxiDriver.h"
+#import <Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h>
 
 @implementation NNTaxiDriver
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+
+    return @{@"driverAvailable":@"driverAvailable",
+             @"driverId":@"driverId",
+             @"latitude":@"latitude",
+             @"longitude":@"longitude"};
+}
+
+
+- (CLLocationCoordinate2D)coordinate {
+    return CLLocationCoordinate2DMake(self.latitude, self.longitude);
+}
+
+- (NSString *)title {
+
+    return [NSString stringWithFormat:@"Taxista id:%@", self.driverId];
+}
 
 @end

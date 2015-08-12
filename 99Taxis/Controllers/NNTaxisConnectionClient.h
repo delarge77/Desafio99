@@ -6,8 +6,12 @@
 //  Copyright (c) 2015 Alessandro dos Santos Pinto. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AFHTTPSessionManager.h"
 
-@interface NNTaxisConnectionClient : NSObject
+extern NSString *NNTaxisClientURL;
+
+@interface NNTaxisConnectionClient : AFHTTPSessionManager
+
++ (instancetype)sharedClient;
 
 @end

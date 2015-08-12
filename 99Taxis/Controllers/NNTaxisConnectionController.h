@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+
+typedef void (^NNTaxisCompletionHandler)(NSArray *array, NSError *error);
 
 @interface NNTaxisConnectionController : NSObject
+
++ (NSURLSessionTask *) loadTaxisWithNorthEast:(CLLocationCoordinate2D)northEast southWest:(CLLocationCoordinate2D)southWest withCompletionHandler
+                          :(NNTaxisCompletionHandler) completionHandler;
 
 @end

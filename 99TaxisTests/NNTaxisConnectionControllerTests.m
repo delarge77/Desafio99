@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 Alessandro dos Santos Pinto. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import "NNTaxisConnectionController.h"
+#import "OHHTTPStubs.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface NNTaxisConnectionControllerTests : XCTestCase
 
@@ -15,26 +17,26 @@
 
 @implementation NNTaxisConnectionControllerTests
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+- (void)testShouldReturnConnectionErrorWhenURLErrorDomainIsReturned {
+    
+    CLLocationCoordinate2D  northEast = CLLocationCoordinate2DMake(-23.612474, -46.702746);
+    CLLocationCoordinate2D  southWest = CLLocationCoordinate2DMake(-23.589548, -46.673392);
+    
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Should return connection error when not connected"];
+    
+    NSURLSessionTask *task = [NNTaxisConnectionController loadTaxisWithNorthEast:northEast southWest:southWest withCompletionHandler:^(NSArray *array, NSError *error) {
+        
+        XCTAssertNil(array);
+        XCTAssertNotNil(error);
+        XCTAssertEqualObjects(error.userInfo[NSLocalizedDescriptionKey], NSLocalizedString(@"Parece que você está sem internet! Por favor, verifique a sua conexão e tente novamente.", nil));
+        
+        [expectation fulfill];
     }];
+    
+    [self waitForExpectationsWithTimeout:task.originalRequest.timeoutInterval handler:^(NSError *error) {
+        [task cancel];
+    }];
+    
 }
 
 @end

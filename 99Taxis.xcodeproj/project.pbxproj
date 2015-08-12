@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		387C4FF5E259231544CF342B /* libPods-99Taxis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6927F556CA9FE4837B26B1 /* libPods-99Taxis.a */; };
 		878A201B1B7A5A2B00DF8B95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A201A1B7A5A2B00DF8B95 /* main.m */; };
 		878A201E1B7A5A2B00DF8B95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A201D1B7A5A2B00DF8B95 /* AppDelegate.m */; };
-		878A20211B7A5A2B00DF8B95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A20201B7A5A2B00DF8B95 /* ViewController.m */; };
+		878A20211B7A5A2B00DF8B95 /* NNTTaxisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A20201B7A5A2B00DF8B95 /* NNTTaxisViewController.m */; };
 		878A20241B7A5A2B00DF8B95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878A20221B7A5A2B00DF8B95 /* Main.storyboard */; };
 		878A20261B7A5A2B00DF8B95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878A20251B7A5A2B00DF8B95 /* Images.xcassets */; };
 		878A20291B7A5A2B00DF8B95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878A20271B7A5A2B00DF8B95 /* LaunchScreen.xib */; };
-		878A20351B7A5A2B00DF8B95 /* _9TaxisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A20341B7A5A2B00DF8B95 /* _9TaxisTests.m */; };
+		878A20431B7A5D8500DF8B95 /* NNTaxisConnectionClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A20421B7A5D8500DF8B95 /* NNTaxisConnectionClient.m */; };
+		878A20461B7A5FC600DF8B95 /* NNTaxisConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A20451B7A5FC600DF8B95 /* NNTaxisConnectionController.m */; };
+		878A20481B7A62A400DF8B95 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878A20471B7A62A400DF8B95 /* CoreLocation.framework */; };
+		878A204C1B7A6A6A00DF8B95 /* NNTaxiDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A204B1B7A6A6A00DF8B95 /* NNTaxiDriver.m */; };
+		878A204E1B7A7B5600DF8B95 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878A204D1B7A7B5600DF8B95 /* MapKit.framework */; };
+		878A20551B7A85E300DF8B95 /* Brazil - Sao Paulo.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 878A20541B7A85E300DF8B95 /* Brazil - Sao Paulo.gpx */; };
+		878A20561B7A85E300DF8B95 /* Brazil - Sao Paulo.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 878A20541B7A85E300DF8B95 /* Brazil - Sao Paulo.gpx */; };
+		878A205E1B7A9BF500DF8B95 /* CLLocation+NNTaxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A205D1B7A9BF500DF8B95 /* CLLocation+NNTaxis.m */; };
+		878A205F1B7A9BF500DF8B95 /* CLLocation+NNTaxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A205D1B7A9BF500DF8B95 /* CLLocation+NNTaxis.m */; };
+		878A20631B7AF71100DF8B95 /* NNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A20621B7AF71100DF8B95 /* NNBaseViewController.m */; };
+		878A20651B7B002F00DF8B95 /* NNTaxisConnectionClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A20641B7B002F00DF8B95 /* NNTaxisConnectionClientTests.m */; };
+		878A20671B7B02F700DF8B95 /* NNTaxisConnectionControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A20661B7B02F700DF8B95 /* NNTaxisConnectionControllerTests.m */; };
+		878A20691B7B0BF500DF8B95 /* NNTaxiDriverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 878A20681B7B0BF500DF8B95 /* NNTaxiDriverTests.m */; };
+		B5315C7D33422069D0E64A62 /* libPods-99TaxisTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC73321BCC8D7D1D1ED7BB0 /* libPods-99TaxisTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +41,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		365E0D91B76393F8F2963506 /* Pods-99Taxis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-99Taxis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-99Taxis/Pods-99Taxis.debug.xcconfig"; sourceTree = "<group>"; };
 		878A20151B7A5A2B00DF8B95 /* 99Taxis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 99Taxis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		878A20191B7A5A2B00DF8B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878A201A1B7A5A2B00DF8B95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		878A201C1B7A5A2B00DF8B95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		878A201D1B7A5A2B00DF8B95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		878A201F1B7A5A2B00DF8B95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		878A20201B7A5A2B00DF8B95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		878A201C1B7A5A2B00DF8B95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Application/AppDelegate.h; sourceTree = "<group>"; };
+		878A201D1B7A5A2B00DF8B95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Application/AppDelegate.m; sourceTree = "<group>"; };
+		878A201F1B7A5A2B00DF8B95 /* NNTTaxisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNTTaxisViewController.h; path = ViewControllers/NNTTaxisViewController.h; sourceTree = "<group>"; };
+		878A20201B7A5A2B00DF8B95 /* NNTTaxisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NNTTaxisViewController.m; path = ViewControllers/NNTTaxisViewController.m; sourceTree = "<group>"; };
 		878A20231B7A5A2B00DF8B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		878A20251B7A5A2B00DF8B95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		878A20281B7A5A2B00DF8B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		878A202E1B7A5A2B00DF8B95 /* 99TaxisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 99TaxisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		878A20331B7A5A2B00DF8B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		878A20341B7A5A2B00DF8B95 /* _9TaxisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _9TaxisTests.m; sourceTree = "<group>"; };
+		878A20411B7A5D8500DF8B95 /* NNTaxisConnectionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNTaxisConnectionClient.h; path = Controllers/NNTaxisConnectionClient.h; sourceTree = "<group>"; };
+		878A20421B7A5D8500DF8B95 /* NNTaxisConnectionClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNTaxisConnectionClient.m; path = Controllers/NNTaxisConnectionClient.m; sourceTree = "<group>"; };
+		878A20441B7A5FC600DF8B95 /* NNTaxisConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNTaxisConnectionController.h; path = Controllers/NNTaxisConnectionController.h; sourceTree = "<group>"; };
+		878A20451B7A5FC600DF8B95 /* NNTaxisConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNTaxisConnectionController.m; path = Controllers/NNTaxisConnectionController.m; sourceTree = "<group>"; };
+		878A20471B7A62A400DF8B95 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		878A204A1B7A6A6A00DF8B95 /* NNTaxiDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNTaxiDriver.h; path = Models/NNTaxiDriver.h; sourceTree = "<group>"; };
+		878A204B1B7A6A6A00DF8B95 /* NNTaxiDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNTaxiDriver.m; path = Models/NNTaxiDriver.m; sourceTree = "<group>"; };
+		878A204D1B7A7B5600DF8B95 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		878A20541B7A85E300DF8B95 /* Brazil - Sao Paulo.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Brazil - Sao Paulo.gpx"; path = "Media/GPSLocation/Brazil - Sao Paulo.gpx"; sourceTree = "<group>"; };
+		878A205C1B7A9BF500DF8B95 /* CLLocation+NNTaxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocation+NNTaxis.h"; path = "Categories/CLLocation+NNTaxis.h"; sourceTree = "<group>"; };
+		878A205D1B7A9BF500DF8B95 /* CLLocation+NNTaxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+NNTaxis.m"; path = "Categories/CLLocation+NNTaxis.m"; sourceTree = "<group>"; };
+		878A20611B7AF71100DF8B95 /* NNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNBaseViewController.h; path = ViewControllers/NNBaseViewController.h; sourceTree = "<group>"; };
+		878A20621B7AF71100DF8B95 /* NNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNBaseViewController.m; path = ViewControllers/NNBaseViewController.m; sourceTree = "<group>"; };
+		878A20641B7B002F00DF8B95 /* NNTaxisConnectionClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTaxisConnectionClientTests.m; sourceTree = "<group>"; };
+		878A20661B7B02F700DF8B95 /* NNTaxisConnectionControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTaxisConnectionControllerTests.m; sourceTree = "<group>"; };
+		878A20681B7B0BF500DF8B95 /* NNTaxiDriverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTaxiDriverTests.m; sourceTree = "<group>"; };
+		8BC73321BCC8D7D1D1ED7BB0 /* libPods-99TaxisTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-99TaxisTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6927F556CA9FE4837B26B1 /* libPods-99Taxis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-99Taxis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35DD430AE663D20F34EC740 /* Pods-99TaxisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-99TaxisTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-99TaxisTests/Pods-99TaxisTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE8F88A144D06F5125C03DAD /* Pods-99Taxis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-99Taxis.release.xcconfig"; path = "Pods/Target Support Files/Pods-99Taxis/Pods-99Taxis.release.xcconfig"; sourceTree = "<group>"; };
+		E16C7C383B4CCB80A30472A5 /* Pods-99TaxisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-99TaxisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-99TaxisTests/Pods-99TaxisTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878A204E1B7A7B5600DF8B95 /* MapKit.framework in Frameworks */,
+				878A20481B7A62A400DF8B95 /* CoreLocation.framework in Frameworks */,
+				387C4FF5E259231544CF342B /* libPods-99Taxis.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5315C7D33422069D0E64A62 /* libPods-99TaxisTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +105,8 @@
 				878A20171B7A5A2B00DF8B95 /* 99Taxis */,
 				878A20311B7A5A2B00DF8B95 /* 99TaxisTests */,
 				878A20161B7A5A2B00DF8B95 /* Products */,
+				C2948BA3F5A140A961F047AF /* Pods */,
+				FD4854ADF4704790AFAB9FF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +122,12 @@
 		878A20171B7A5A2B00DF8B95 /* 99Taxis */ = {
 			isa = PBXGroup;
 			children = (
-				878A201C1B7A5A2B00DF8B95 /* AppDelegate.h */,
-				878A201D1B7A5A2B00DF8B95 /* AppDelegate.m */,
-				878A201F1B7A5A2B00DF8B95 /* ViewController.h */,
-				878A20201B7A5A2B00DF8B95 /* ViewController.m */,
+				878A203E1B7A5A3600DF8B95 /* Application */,
+				878A20601B7A9BFA00DF8B95 /* Categories */,
+				878A20401B7A5D3400DF8B95 /* Controllers */,
+				878A203F1B7A5A4200DF8B95 /* ViewControllers */,
+				878A20501B7A81B600DF8B95 /* Media */,
+				878A20491B7A6A1300DF8B95 /* Models */,
 				878A20221B7A5A2B00DF8B95 /* Main.storyboard */,
 				878A20251B7A5A2B00DF8B95 /* Images.xcassets */,
 				878A20271B7A5A2B00DF8B95 /* LaunchScreen.xib */,
@@ -105,7 +148,8 @@
 		878A20311B7A5A2B00DF8B95 /* 99TaxisTests */ = {
 			isa = PBXGroup;
 			children = (
-				878A20341B7A5A2B00DF8B95 /* _9TaxisTests.m */,
+				878A206A1B7B0C3A00DF8B95 /* Controller */,
+				878A206B1B7B0C5300DF8B95 /* Models */,
 				878A20321B7A5A2B00DF8B95 /* Supporting Files */,
 			);
 			path = 99TaxisTests;
@@ -119,6 +163,110 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		878A203E1B7A5A3600DF8B95 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				878A201C1B7A5A2B00DF8B95 /* AppDelegate.h */,
+				878A201D1B7A5A2B00DF8B95 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		878A203F1B7A5A4200DF8B95 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				878A20611B7AF71100DF8B95 /* NNBaseViewController.h */,
+				878A20621B7AF71100DF8B95 /* NNBaseViewController.m */,
+				878A201F1B7A5A2B00DF8B95 /* NNTTaxisViewController.h */,
+				878A20201B7A5A2B00DF8B95 /* NNTTaxisViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		878A20401B7A5D3400DF8B95 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				878A20411B7A5D8500DF8B95 /* NNTaxisConnectionClient.h */,
+				878A20421B7A5D8500DF8B95 /* NNTaxisConnectionClient.m */,
+				878A20441B7A5FC600DF8B95 /* NNTaxisConnectionController.h */,
+				878A20451B7A5FC600DF8B95 /* NNTaxisConnectionController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		878A20491B7A6A1300DF8B95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				878A204A1B7A6A6A00DF8B95 /* NNTaxiDriver.h */,
+				878A204B1B7A6A6A00DF8B95 /* NNTaxiDriver.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		878A204F1B7A81A000DF8B95 /* GPSLocation */ = {
+			isa = PBXGroup;
+			children = (
+				878A20541B7A85E300DF8B95 /* Brazil - Sao Paulo.gpx */,
+			);
+			name = GPSLocation;
+			sourceTree = "<group>";
+		};
+		878A20501B7A81B600DF8B95 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				878A204F1B7A81A000DF8B95 /* GPSLocation */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		878A20601B7A9BFA00DF8B95 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				878A205C1B7A9BF500DF8B95 /* CLLocation+NNTaxis.h */,
+				878A205D1B7A9BF500DF8B95 /* CLLocation+NNTaxis.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		878A206A1B7B0C3A00DF8B95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				878A20661B7B02F700DF8B95 /* NNTaxisConnectionControllerTests.m */,
+				878A20641B7B002F00DF8B95 /* NNTaxisConnectionClientTests.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		878A206B1B7B0C5300DF8B95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				878A20681B7B0BF500DF8B95 /* NNTaxiDriverTests.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C2948BA3F5A140A961F047AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				365E0D91B76393F8F2963506 /* Pods-99Taxis.debug.xcconfig */,
+				DE8F88A144D06F5125C03DAD /* Pods-99Taxis.release.xcconfig */,
+				C35DD430AE663D20F34EC740 /* Pods-99TaxisTests.debug.xcconfig */,
+				E16C7C383B4CCB80A30472A5 /* Pods-99TaxisTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD4854ADF4704790AFAB9FF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				878A204D1B7A7B5600DF8B95 /* MapKit.framework */,
+				878A20471B7A62A400DF8B95 /* CoreLocation.framework */,
+				9A6927F556CA9FE4837B26B1 /* libPods-99Taxis.a */,
+				8BC73321BCC8D7D1D1ED7BB0 /* libPods-99TaxisTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 878A20381B7A5A2B00DF8B95 /* Build configuration list for PBXNativeTarget "99Taxis" */;
 			buildPhases = (
+				31FEBE47CF71C42E5918A37C /* Check Pods Manifest.lock */,
 				878A20111B7A5A2B00DF8B95 /* Sources */,
 				878A20121B7A5A2B00DF8B95 /* Frameworks */,
 				878A20131B7A5A2B00DF8B95 /* Resources */,
+				BFE0AA1EA9783F4044CA7CDD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 878A203B1B7A5A2B00DF8B95 /* Build configuration list for PBXNativeTarget "99TaxisTests" */;
 			buildPhases = (
+				B67C6891A7EA1BDA5074D18F /* Check Pods Manifest.lock */,
 				878A202A1B7A5A2B00DF8B95 /* Sources */,
 				878A202B1B7A5A2B00DF8B95 /* Frameworks */,
 				878A202C1B7A5A2B00DF8B95 /* Resources */,
+				71C5AD2C1B82D9B9BE56AB1A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878A20551B7A85E300DF8B95 /* Brazil - Sao Paulo.gpx in Resources */,
 				878A20241B7A5A2B00DF8B95 /* Main.storyboard in Resources */,
 				878A20291B7A5A2B00DF8B95 /* LaunchScreen.xib in Resources */,
 				878A20261B7A5A2B00DF8B95 /* Images.xcassets in Resources */,
@@ -209,19 +362,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878A20561B7A85E300DF8B95 /* Brazil - Sao Paulo.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31FEBE47CF71C42E5918A37C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71C5AD2C1B82D9B9BE56AB1A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-99TaxisTests/Pods-99TaxisTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B67C6891A7EA1BDA5074D18F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BFE0AA1EA9783F4044CA7CDD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-99Taxis/Pods-99Taxis-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		878A20111B7A5A2B00DF8B95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878A20211B7A5A2B00DF8B95 /* ViewController.m in Sources */,
+				878A20431B7A5D8500DF8B95 /* NNTaxisConnectionClient.m in Sources */,
+				878A20211B7A5A2B00DF8B95 /* NNTTaxisViewController.m in Sources */,
+				878A20461B7A5FC600DF8B95 /* NNTaxisConnectionController.m in Sources */,
 				878A201E1B7A5A2B00DF8B95 /* AppDelegate.m in Sources */,
 				878A201B1B7A5A2B00DF8B95 /* main.m in Sources */,
+				878A204C1B7A6A6A00DF8B95 /* NNTaxiDriver.m in Sources */,
+				878A205E1B7A9BF500DF8B95 /* CLLocation+NNTaxis.m in Sources */,
+				878A20631B7AF71100DF8B95 /* NNBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +451,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878A20351B7A5A2B00DF8B95 /* _9TaxisTests.m in Sources */,
+				878A20651B7B002F00DF8B95 /* NNTaxisConnectionClientTests.m in Sources */,
+				878A20671B7B02F700DF8B95 /* NNTaxisConnectionControllerTests.m in Sources */,
+				878A205F1B7A9BF500DF8B95 /* CLLocation+NNTaxis.m in Sources */,
+				878A20691B7B0BF500DF8B95 /* NNTaxiDriverTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,26 +570,31 @@
 		};
 		878A20391B7A5A2B00DF8B95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365E0D91B76393F8F2963506 /* Pods-99Taxis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 99Taxis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		878A203A1B7A5A2B00DF8B95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8F88A144D06F5125C03DAD /* Pods-99Taxis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 99Taxis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		878A203C1B7A5A2B00DF8B95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35DD430AE663D20F34EC740 /* Pods-99TaxisTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -384,6 +614,7 @@
 		};
 		878A203D1B7A5A2B00DF8B95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E16C7C383B4CCB80A30472A5 /* Pods-99TaxisTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -416,6 +647,7 @@
 				878A203A1B7A5A2B00DF8B95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		878A203B1B7A5A2B00DF8B95 /* Build configuration list for PBXNativeTarget "99TaxisTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +656,7 @@
 				878A203D1B7A5A2B00DF8B95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
